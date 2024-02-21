@@ -1,4 +1,5 @@
 import '@/assets/styles/globals.css'
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
     title: 'Property Wizard | Find The Perfect Rental',
@@ -10,9 +11,10 @@ const MainLayout = ({ children }) => {
     return (
         <html lang='en'>
         <body>
-        <div>
+        <Navbar/>
+        <main>
             {children}
-        </div>
+        </main>
         </body>
         </html>
     );
